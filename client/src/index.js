@@ -1,15 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import { store } from './app/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+import App from './App';
+import Signup from './apps/XyForms/Signup'
+import Protected from './features/protected/protected'
+
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<App />} />
+        <Route path='/signup' element={<Signup />} />
+        <Route path="*" element={<Protected />} />
+      </Routes>
+    </BrowserRouter>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
