@@ -21,8 +21,6 @@
 
 **Integration Capabilities:** Connections with Git/Bitbucket for linking bugs to code commits, and with tools like Slack or Microsoft Teams for notifications.
 
-**Time Tracking**: Estimating and logging time spent on reproducing, analyzing, and fixing bugs.
-
-**Agile Management:** Kanban or Scrum boards to visualize the workflow of bugs alongside feature development.
+**Time Tracking**: Estimating and logging time spent on reproducing, analyzing, and fixing bugs..
 
 **Customizable Fields:** Adding tailored fields to capture specific information relevant to the project. 
